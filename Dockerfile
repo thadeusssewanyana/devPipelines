@@ -6,9 +6,9 @@ ARG GIT_COMMIT=unspecified
 LABEL git_commit=$GIT_COMMIT
 
 # Run this command to build the image locally:
-## docker image build --no-cache --tag shazchaudhry/docker-jenkins:latest --build-arg GIT_COMMIT=$(git log -1 --format=%H) .
+## docker image build --no-cache --tag thadeusssewanyana/docker-jenkins:latest --build-arg GIT_COMMIT=$(git log -1 --format=%H) .
 # Once the image has been build using the above command then run this command below to find git commit:
-## docker inspect shazchaudhry/docker-jenkins:latest | jq '.[].ContainerConfig.Labels'
+## docker inspect thadeusssewanyana/docker-jenkins:latest | jq '.[].ContainerConfig.Labels'
 
 # Configure Jenkins
 COPY config/*.xml $JENKINS_HOME/
