@@ -36,7 +36,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - jenkins_home:/var/jenkins_home
-    secrets: # See how secrets are used in this jenkins image at: https://github.com/shazChaudhry/docker-jenkins/blob/master/config/security.groovy
+    secrets: # See how secrets are used in this jenkins image at: https://github.com/thadeusssewanyana/devopsPipelines/config/security.groovy
       - jenkins-user
       - jenkins-pass
     deploy:
